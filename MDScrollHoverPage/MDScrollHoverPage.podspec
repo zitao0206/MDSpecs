@@ -21,16 +21,17 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/lizitao/MDScrollHoverPage'
+  s.homepage         = 'https://github.com/Leon0206/MDScrollHoverPage'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'lizitao' => '634376133@qq.com' }
-  s.source           = { :git => 'https://github.com/lizitao/MDScrollHoverPage.git', :tag => s.version.to_s }
+  s.author           = { 'Leon0206' => '634376133@qq.com' }
+  s.source           = { :git => 'https://github.com/Leon0206/MDScrollHoverPage.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
 
   s.source_files = 'MDScrollHoverPage/Classes/**/*'
+  s.prefix_header_file = 'MDScrollHoverPage.pch'
   
   # s.resource_bundles = {
   #   'MDScrollHoverPage' => ['MDScrollHoverPage/Assets/*.png']
@@ -38,5 +39,6 @@ TODO: Add long description of the pod here.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'MDCommonKit'
+  s.dependency 'EasyLayout'
 end
